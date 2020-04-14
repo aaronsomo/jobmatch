@@ -6,13 +6,14 @@ const SearchBar = () => {
   const submitInput = () => {};
 
   return (
-    <div>
+    <div class="container">
+      <div class="title">JoB-mAtCh</div>
       <input
+        class="search"
         placeholder="search job position here"
-        onChange={(e) => handleInput(e)}
+        onChange={(e) => handleInput(e.target.value)}
       />
-      <button>Search</button>
-      <button onClick={submitInput}>Search</button>
+      <button class="search-button" onClick={submitInput}>Search</button>
     </div>
   );
 };
